@@ -6,6 +6,7 @@
 #
 
 sudo -k
+sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
 sudo apt-get update
 sudo apt-get install -y curl
 
@@ -16,7 +17,7 @@ rvm use 2.0.0 --default
 
 # Install Heroku toolbelt
 wget -O- https://toolbelt.heroku.com/apt/release.key | apt-key add -
-sudo apt-get install -y heroku-toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # Install Git and configure
 sudo apt-get install -y git
