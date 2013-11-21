@@ -5,6 +5,7 @@
 # using Ubuntu precise32 standard box 
 #
 
+# Update packages 
 sudo apt-get update
 sudo apt-get install -y curl
 
@@ -16,6 +17,7 @@ rvm use 2.0.0 --default
 
 # Install Git and configure
 sudo apt-get install -y git
+cp /vagrant/gitconfig ~/.gitconfig
 
 # Setup development directories
 mkdir /home/SOURCE
