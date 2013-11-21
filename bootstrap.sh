@@ -9,6 +9,9 @@ sudo -k
 sudo apt-add-repository 'deb http://toolbelt.herokuapp.com/ubuntu ./'
 sudo apt-get update
 sudo apt-get install -y curl
+sudo apt-get install -y libecpg-dev
+sudo apt-get install -y postgresql-client
+sudo apt-get install -y postgresql postgresql-contrib
 
 # Install RVM and update Ruby version
 \curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
